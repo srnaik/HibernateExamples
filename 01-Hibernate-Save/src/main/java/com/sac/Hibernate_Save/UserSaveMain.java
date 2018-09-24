@@ -24,9 +24,9 @@ public class UserSaveMain {
 		
 		try {
 			User user = new User();
-			user.setFirstName("Sourav");
-			user.setLastName("Ganguly");
-			user.setEmailId("Sourav@Ganguly.com");
+			user.setFirstName("Virat");
+			user.setLastName("Kohli");
+			user.setEmailId("Virat@Kohli.com");
 			user.setGender("Male");
 			transaction = session.beginTransaction();
 			transaction.begin();
@@ -38,9 +38,6 @@ public class UserSaveMain {
 				transaction.rollback();
 		}finally {
 		session.close();	
-		}
-		
-		
+		}		
 	}
-
 }
